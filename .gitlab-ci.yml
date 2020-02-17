@@ -35,7 +35,7 @@ staging:
   stage: stage
   when: manual
   onlY:
-    - /^\d+\.\d+\.\d+/
+    - 2.4.10
   script:
     - echo "Deploy"
   environment:
@@ -46,7 +46,7 @@ production:
   stage: production
   when: manual
   only:
-    - /^\d+\.\d+\.\d+/
+    - 2.4.10
   script:
     - echo "'Deploy"
   environment:
