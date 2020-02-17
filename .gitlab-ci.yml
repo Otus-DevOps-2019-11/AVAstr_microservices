@@ -34,7 +34,7 @@ deploy_dev_job:
 staging:
   stage: stage
   when: manual
-  onlY:
+  only:
     - 2.4.10
   script:
     - echo "Deploy"
