@@ -1,3 +1,5 @@
+image: ruby:2.4.2
+
 stages:
   - build
   - test
@@ -10,8 +12,12 @@ variables:
 
 build_job:
   stage: build
+  before_script:
+    - bundle install
+  services:
+  - mongo:latest
   script:
-    - echo "Building"
+    - ruby simpletest.rb
 
 test_unit_job:
   stage: test
