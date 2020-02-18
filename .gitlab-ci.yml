@@ -15,8 +15,9 @@ build_job:
   before_script:
     - bundle install
   services:
-  - mongo:latest
+    - mongo:latest
   script:
+    - cd reddit
     - ruby simpletest.rb
 
 test_unit_job:
