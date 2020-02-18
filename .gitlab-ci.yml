@@ -15,7 +15,7 @@ build_job:
   before_script:
     - cd reddit
     - bundle install
-    - docker info
+#    - docker info
   services:
     - mongo:latest
   script:
