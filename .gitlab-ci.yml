@@ -17,7 +17,7 @@ build_job:
     - bundle install
 #    - docker info
   services:
-    - mongo:latest
+    - docker:dind
   script:
     - docker build -t avastr/ui:1.0 ./src/ui
     - docker build -t avastr/comment:1.0 ./src/comment
