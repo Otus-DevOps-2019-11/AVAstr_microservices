@@ -19,9 +19,9 @@ build_job:
   services:
     - docker:dind
   script:
-    - docker build -t avastr/ui:1.0 ./src/ui
-    - docker build -t avastr/comment:1.0 ./src/comment
-    - docker build -t avastr/post:1.0 ./src/post-py
+    - sudo docker build -t avastr/ui:1.0 ./src/ui
+    - sudo docker build -t avastr/comment:1.0 ./src/comment
+    - sudo docker build -t avastr/post:1.0 ./src/post-py
     - docker run -d --network=reddit mongo:latest
     - docker run -d --network=reddit --network-alias=post avastr/post:1.0
     - docker run -d --network=reddit --network-alias=post_db --network-alias=comment_db mongo:latest
