@@ -15,14 +15,13 @@ build_job:
   before_script:
     - cd reddit
     - bundle install
-    - ruby simpletest.rb
     - docker info
   services:
     - mongo:latest
   script:
     - docker build -t reddit_docker .
     - docker run reddit_docker infra/simpletest.rb
-
+    - ruby simpletest.rb
 test_unit_job:
   stage: test
   script:
