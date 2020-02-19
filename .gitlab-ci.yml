@@ -25,6 +25,7 @@ build_job:
   script:
     - pwd
     - ls -la
+    - dockerd &
     - docker ps -a
     - docker images ps -a
     - docker build -t reddit-app/gitlab:1.0 .
