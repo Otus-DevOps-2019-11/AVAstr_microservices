@@ -17,8 +17,6 @@ build_job:
     - docker:19.03.1-dind
   before_script:
     - cd reddit
-  tags:
-    - reddit-deploy
   script:
     - docker info
     - docker build -t reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID .
