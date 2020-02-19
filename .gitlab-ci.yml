@@ -11,12 +11,15 @@ variables:
   DATABASE_URL: "mongodb://mongo/user_posts"
   DOCKER_DRIVER: overlay2
 
+
+before_script:
+  - cd reddit
+
+
 build_job:
-  stage: build
   services:
     - docker:19.03.1-dind
-  before_script:
-    - cd reddit
+  stage: build
   script:
     - docker info
     - docker build -t reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID .
