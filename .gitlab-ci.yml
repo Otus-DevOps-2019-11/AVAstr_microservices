@@ -21,7 +21,6 @@ build_job:
     - docker:19.03.1-dind
   stage: build
   script:
-    - docker info
     - docker build -t reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID .
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
     - docker push avastr/gitlab:1.0
