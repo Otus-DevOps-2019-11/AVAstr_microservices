@@ -16,6 +16,7 @@ variables:
 
 before_script:
   - cd reddit
+  - docker-compose up -d
   - docker info
 
 
