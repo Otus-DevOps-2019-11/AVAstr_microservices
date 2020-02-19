@@ -23,7 +23,7 @@ build_job:
   script:
     - pwd
     - ls -la
-    - docker build -t reddit-app:gitlab .
+    - docker build -t reddit-app/gitlab:1.0 .
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
     - docker push avastr/gitlab:1.0
     - docker images
