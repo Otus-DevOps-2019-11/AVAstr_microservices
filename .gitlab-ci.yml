@@ -21,6 +21,7 @@ build_job:
     - docker:19.03.1-dind
   stage: build
   script:
+    - ls -la
     - docker build -t reddit-app:gitlab .
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
     - docker push avastr/gitlab:1.0
