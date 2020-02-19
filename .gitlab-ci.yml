@@ -23,10 +23,8 @@ build_job:
   script:
     - docker info
     - docker build -t reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID .
-    - docker tag reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID avastr/gitlab:$CI_PIPELINE_IID
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
-    - docker push avastr/gitlab:$CI_PIPELINE_IID
-
+    - docker push avastr/gitlab:1.0
     - docker images
 
 test_unit_job:
