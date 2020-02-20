@@ -27,6 +27,7 @@ build_job:
   script:
     - pwd
     - ls -la
+    - docker login -u avastr -p 9xtibhrf9
     - docker ps -a
     - docker images ps -a
     - docker build -t gitlab:1.0 .
