@@ -20,7 +20,7 @@ services:
 
 before_script:
 #  - cd reddit
-#  - docker info
+  - docker info
 
 build_job:
   stage: build
