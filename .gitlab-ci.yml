@@ -18,7 +18,7 @@ services:
 #  command: ["dockerd-entrypoint.sh"]
 
 before_script:
-  - cd reddit
+#  - cd reddit
   - docker version
 
 build_job:
