@@ -14,8 +14,8 @@ variables:
 
 services:
   - docker:dind
-#  entrypoint:["env", "-u", "DOCKER_HOST"]
-#  command: ["dockerd-entrypoint.sh"]
+    entrypoint:["env", "-u", "DOCKER_HOST"]
+    command:["dockerd-entrypoint.sh"]
 
 before_script:
   - cd reddit
