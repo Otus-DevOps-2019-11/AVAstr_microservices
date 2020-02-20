@@ -14,12 +14,12 @@ variables:
 
 services:
   - docker:dind
-    entrypoint:["env", "-u", "DOCKER_HOST"]
-    command:["dockerd-entrypoint.sh"]
+#    entrypoint:["env", "-u", "DOCKER_HOST"]
+#    command:["dockerd-entrypoint.sh"]
 
 before_script:
   - cd reddit
-  - docker info
+#  - docker info
 
 build_job:
   stage: build
