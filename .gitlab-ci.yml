@@ -10,10 +10,12 @@ stages:
 variables:
   DATABASE_URL: "mongodb://mongo/user_posts"
   DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://docker:2375/
 
 services:
-  - docker: 19.03.1-dind
-#  - entrypoint: ["env", "-u", "DOCKER_HOST"]
+  - docker:19.03.1-dind
+  entrypoint:["env", "-u", "DOCKER_HOST"]
+  command: ["dockerd-entrypoint.sh"]
 
 before_script:
   - cd reddit
