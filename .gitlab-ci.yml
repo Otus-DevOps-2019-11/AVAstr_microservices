@@ -16,7 +16,7 @@ services:
 
 before_script:
   - cd reddit
-  - docker info
+  - docker version
 
 build_job:
   stage: build
