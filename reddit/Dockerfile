@@ -6,7 +6,7 @@ RUN gem install bundler
 RUN git clone -b monolith https://github.com/express42/reddit.git
 
 RUN cd /reddit && bundle install
-COPY mongod.conf /etc/mongod.conf
+#COPY mongod.conf /etc/mongod.conf
 COPY db_config /reddit/db_config
 COPY start.sh /start.sh
 
