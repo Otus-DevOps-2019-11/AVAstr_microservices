@@ -25,7 +25,6 @@ before_script:
 build_job:
   stage: build
   script:
-    - pwd
     - ls -la
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
     - docker ps -a
