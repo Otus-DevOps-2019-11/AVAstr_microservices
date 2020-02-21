@@ -46,7 +46,7 @@
 
 </details>
 
-**<details><summary>19_Homework (Docker-4)</summary>**
+**<details><summary>19_Homework (gitlab-ci-1)</summary>**
 **В рамках HW было изучено:**
 
   * Работа с **`gitlab-ci-1`**:
