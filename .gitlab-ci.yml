@@ -14,7 +14,7 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 services:
-  - docker:dind
+  - docker:19.3.1-dind
 
 before_script:
   - cd reddit
@@ -23,14 +23,11 @@ before_script:
 build_job:
   stage: build
   script:
-    - ls -la
+    - docker build -t reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID .
+    - docker tag reddit-$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID avastr/gitlab-reddit:$CI_PIPELINE_IID
     - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
-    - docker ps -a
-    - docker images ps -a
-    - docker build -t gitlab:2.0 .
-    - docker login -u $DOCKER_LOGIN -p $DOCKER_PASS
-    - docker push avastr/gitlab:1.0
-    - docker images
+    - docker push avastr/gitlab-reddit:$CI_PIPELINE_IID
+
 
 test_unit_job:
   image: ruby:2.4.2
