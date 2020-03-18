@@ -59,3 +59,15 @@
    * Добавил информирование через slack для gitlab (https://devops-team-otus.slack.com/archives/CRY2WU88P)
 
 </details>
+
+**<details><summary>20_Homework (monitoring-1)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`monitoring-1`**:
+   * Развернул Prometheus в докере
+   * Настроил отслеживание сосотояния микросервисов
+   * С помощью экспортера собрал метрики
+   * Закончил работу с docker-host, удалил ВМ
+   * DockerHub: https://hub.docker.com/r/avastr
+
+</details>
