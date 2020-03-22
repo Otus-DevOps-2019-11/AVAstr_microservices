@@ -2,7 +2,6 @@ from flask import Flask, request, Response
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from bson.json_util import dumps
-from helpers import health
 import os
 import prometheus_client
 import time
