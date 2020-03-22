@@ -8,19 +8,19 @@ services:
       - ${FRONT}
       - ${BACK}
   ui:
-    image: ${USERNAME}/ui:${VERSION}
+    image: ${USER_NAME}/ui:${VERSION}
     ports:
       - 9292:9292/tcp
     networks:
       - ${FRONT}
       - ${BACK}
   post:
-    image: ${USERNAME}/post:${VERSION}
+    image: ${USER_NAME}/post:${VERSION}
     networks:
       - ${BACK}
       - ${FRONT}
   comment:
-    image: ${USERNAME}/comment:${VERSION}
+    image: ${USER_NAME}/comment:${VERSION}
     networks:
       - ${BACK}
       - ${FRONT}
