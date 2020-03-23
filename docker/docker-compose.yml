@@ -10,7 +10,7 @@ services:
   ui:
     image: ${USER_NAME}/ui:${VERSION}
     ports:
-      - 9292:9292/tcp
+      - 9292:${PORT}/tcp
     networks:
       - ${FRONT}
       - ${BACK}

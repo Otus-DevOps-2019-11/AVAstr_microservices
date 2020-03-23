@@ -9,14 +9,6 @@ require 'logger'
 require 'faraday'
 require 'zipkin-tracer'
 require_relative 'helpers'
-require 'rack'
-require 'prometheus/middleware/collector'
-require 'prometheus/middleware/exporter'
-require './middleware.rb'
-use Rack::Deflater, if: ->(_, _, _, body) { body.any? && body[0].length > 512 }
-use Prometheus::Middleware::Collector
-use Prometheus::Middleware::Exporter
-use Metrics
 
 # Dependent services
 POST_SERVICE_HOST ||= ENV['POST_SERVICE_HOST'] || '127.0.0.1'
