@@ -82,3 +82,14 @@
    * DockerHub: https://hub.docker.com/r/avastr
 
 </details>
+
+**<details><summary>23_Homework (logging-1)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`logging-1`**:
+   * Произвел сбор логов elasticsearch, kibana, zipkin
+   * Произвел визуализацию логов, упростил просмотр с помощью фильтров
+   * Собрал структурированные логи
+   * Провел трассировку через zipkin
+
+</details>
