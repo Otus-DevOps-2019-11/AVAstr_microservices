@@ -71,3 +71,14 @@
    * DockerHub: https://hub.docker.com/r/avastr
 
 </details>
+
+**<details><summary>21_Homework (monitoring-2)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`monitoring-2`**:
+   * На практике использовал мониторинг Docker-контейнеров
+   * Собрал метрикив таких системах как grafana, cadvisor, prometheus, alertmanager
+   * Настроил уведомление в slack от alertmanager
+   * DockerHub: https://hub.docker.com/r/avastr
+
+</details>

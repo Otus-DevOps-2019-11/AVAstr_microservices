@@ -1,0 +1,10 @@
+global:
+  slack_api_url: 'https://hooks.slack.com/services/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'
+
+route:
+  receiver: 'slack-notifications'
+
+receivers:
+- name: 'slack-notifications'
+  slack_configs:
+  - channel: '#alertmanager_otus'
