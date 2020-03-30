@@ -104,3 +104,13 @@
    * Кластер удален полностью
 
 </details>
+
+**<details><summary>26_Homework (kubernetes-2)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`kubernetes-2`**:
+   * Развернул локальное окружения для рабоыт k8s
+   * Развернул k8s в GKE
+   * Запустил приложение reddit в k8s
+
+</details>
