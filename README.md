@@ -126,3 +126,13 @@
    * СОздал диски в GCP ля работы с базой данных
 
 </details>
+
+**<details><summary>28_Homework (kubernetes-4)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`kubernetes-4`**:
+   * Установил Helm
+   * Развернул Gitlab k8s
+   * Протестировал работу конвейера в k8s
+
+</details>
