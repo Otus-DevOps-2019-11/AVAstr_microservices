@@ -1,0 +1,21 @@
+comment:
+  image:
+    repository: avastr/comment
+    tag: latest
+  service:
+    externalPort: 9292
+
+post:
+  image:
+    repository: avastr/post
+    tag: latest
+  service:
+    externalPort: 5000
+
+ui:
+  image:
+    repository: avastr/ui
+    tag: latest
+  service:
+    externalPort: 9292
+
