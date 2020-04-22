@@ -136,3 +136,14 @@
    * Протестировал работу конвейера в k8s
 
 </details>
+
+**<details><summary>29_Homework (kubernetes-5)</summary>**
+**В рамках HW было изучено:**
+
+  * Работа с **`kubernetes-5`**:
+   * Развернул Prometheus в k8s
+   * Настроил Prometheus и Grafana для сбора метрик
+   * Настроил EFK для сбора логов
+
+</details>
+
